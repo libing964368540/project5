@@ -1,0 +1,3026 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+li,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #fff;
+  position: relative;
+}
+@media screen and (min-width: 1130px) {
+  /*当屏幕尺寸大于1130px时，应用下面的CSS样式*/
+  .left-nav{
+    display: none;
+  }
+  .container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #header {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    position: fixed;
+    z-index: 200;
+    box-shadow: 0 4px 2px -2px rgba(0,0px,50px,0.1);
+    overflow: hidden;
+    #top-center {
+      width: 1120px;
+      height: 100%;
+      background: #fff;
+      margin: 0 auto;
+      position: relative;
+      -moz-user-select: none;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+      .main-logo {
+        width: 230px;
+        height: 55px;
+        display: block;
+        background: url('../img/logo.png')no-repeat 0 -5px;
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          outline: none;
+        }
+      }
+      .vip-chong {
+        width: 153px;
+        height: 43px;
+        background: url('../img/购买_05.png')no-repeat -4px -5px;
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          outline: none;
+        }
+      }
+      .main-nav {
+        height: 100%;
+        position: absolute;
+        left: 430px;
+        right: 160px;
+        margin: auto;
+        line-height: 90px;
+        display: flex;
+        li {
+          width: 104px;
+          height: 100%;
+          text-align: center;
+          float: left;
+          cursor: pointer;
+          flex-grow: 1;
+          font-size: 18px;
+          font-family: 微软雅黑;
+          border-bottom: 2px solid #fff;
+          &:hover {
+            border-bottom: 2px solid #59d4cf;
+          }
+          a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            outline: none;
+            &:hover {
+              color: #59d4cf;
+            }
+          }
+        }
+        li.active {
+          border-bottom: 2px solid #59d4cf;
+          a {
+            color: #59d4cf;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 90px;
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+    overflow: hidden;
+
+    .hides {
+      display: none;
+    }
+    .backgrounds {
+      width: 100%;
+      height: 100%;
+    }
+    .cloud-one {
+      position: absolute;
+      left: 0;
+      top: 90px;
+      animation: cloud 30s linear infinite;
+    }
+    .cloud-two {
+      position: absolute;
+      right: 0;
+      top: 150px;
+      animation: cloud 50s linear infinite;
+    }
+    .cloud-three {
+      position: absolute;
+      left: 0;
+      bottom: 80px;
+      animation: cloud 100s linear infinite;
+    }
+    .main-cloud {
+      position: absolute;
+      left: 0;
+      top: 90px;
+      animation: cloud 150s linear infinite;
+    }
+    @keyframes cloud {
+      0% {
+        transform: translateX(300px);
+      }
+      50% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .hands {
+      width: auto;
+      height: auto;
+      position: absolute;
+      overflow: hidden;
+      transition: all 2s ease;
+      left: -1000px;
+      bottom: 0;
+    }
+    .hands.active {
+      left: 0;
+    }
+    .logo {
+      width: 481px;
+      height: 153px;
+      position: absolute;
+      left: 950px;
+      top: 193px;
+      background: url('../img/logo_05.png')no-repeat;
+      background-size: 100%;
+    }
+    .download {
+      width: 237px;
+      height: 230px;
+      background: url('../img/扫描二维码下载_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 1180px;
+      top: 426px;
+    }
+    .iphone {
+      width: 205px;
+      height: 76px;
+      background: url('../img/苹果_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 950px;
+      top: 452px;
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .android {
+      width: 205px;
+      height: 76px;
+      background: url('../img/安卓_08.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 950px;
+      top: 574px;
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  #about {
+    width: 100%;
+    height: 393px;
+    background: #e5e5e5;
+    overflow: hidden;
+    #about-lezhi {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      padding-top: 58px;
+      box-sizing: border-box;
+      #about-title {
+        width: 319px;
+        height: 95px;
+        background: url('../img/关于乐只_03.png')no-repeat;
+        background-size: 100%;
+        margin: 0 auto;
+      }
+      li:nth-child(2) {
+        width: 600px;
+        height: auto;
+        margin: 35px auto 0;
+        font-size: 16px;
+        line-height: 2em;
+        font-family: "微软雅黑",Arial;
+        text-indent: 2em;
+      }
+      #xiaosanjiao {
+        width: 31px;
+        height: 21px;
+        background: url('../img/小三角_07.png')no-repeat;
+        background-size: 100%;
+        margin: 35px auto;
+      }
+    }
+  }
+  #rby {
+    width: 100%;
+    height: 458px;
+  }
+  #rby-con {
+    width: 870px;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    display: flex;
+    li {
+      flex-grow: 1;
+      padding-top: 51px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .rby-one {
+      transform: translateY(-200px);
+      opacity: 0;
+      transition: all 0.5s ease;
+      span {
+        width: 182px;
+        display: block;
+        height: 260px;
+        margin: 0 auto;
+        background: url('../img/价值观_03.png')no-repeat;
+        background-size: 100%;
+        margin-bottom: 26px;
+      }
+      p {
+        font-size: 18px;
+        font-family: "微软雅黑",Arial;
+      }
+    }
+    .rby-one.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .rby-two {
+      transform: translateY(-200px);
+      opacity: 0;
+      transition: all 0.5s ease 0.3s;
+      span {
+        width: 182px;
+        display: block;
+        height: 260px;
+        margin: 0 auto;
+        background: url('../img/使命_05.png')no-repeat;
+        background-size: 100%;
+        margin-bottom: 26px;
+      }
+      p {
+        font-size: 18px;
+        font-family: "微软雅黑",Arial;
+      }
+    }
+    .rby-two.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .rby-three {
+      transform: translateY(-200px);
+      opacity: 0;
+      transition: all 0.5s ease 0.5s;
+      span {
+        width: 182px;
+        height: 260px;
+        display: block;
+        margin: 0 auto;
+        background: url('../img/愿景_07.png')no-repeat;
+        background-size: 100%;
+        margin-bottom: 26px;
+      }
+      p {
+        font-size: 18px;
+        font-family: "微软雅黑",Arial;
+      }
+    }
+    .rby-three.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  #business {
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    #cons {
+      width: 285px;
+      height: 250px;
+      position: absolute;
+      right: 492px;
+      top: 187px;
+      // text-align: center;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+      .course{
+        font-size: 18px;
+        font-family: "微软雅黑",Arial;
+        text-align: center;
+      }
+      .course-k{
+        padding-left: 25px;
+        font-family: "微软雅黑",Arial;
+        text-align: left;
+      }
+      #bss-img1 {
+        width: 255px;
+        height: 154px;
+        display: block;
+        margin: 0 auto;
+        background: url('../img/../img/线上_24.png')no-repeat;
+        background-size: 100%;
+        margin-bottom: 30px;
+      }
+      #bss-img2 {
+        width: 255px;
+        height: 154px;
+        display: block;
+        margin: 0 auto;
+        background: url('../img/线下_24.png')no-repeat;
+        background-size: 100%;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 18px;
+        font-family: "微软雅黑",Arial;
+        color: #fff;
+      }
+    }
+  }
+  #history {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    padding-top: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    #history-center {
+      width: 1040px;
+      height: 805px;
+      margin: 0 auto;
+      position: relative;
+      -moz-user-select: none;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+      .title {
+        width: 319px;
+        height: 95px;
+        background: url('../img/发展历程_15.png')no-repeat;
+        background-size: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      .time-axis {
+        width: 41px;
+        height: 645px;
+        display: block;
+        margin: 30px auto;
+        background: url('../img/直_19.png')no-repeat;
+        background-size: 100%;
+      }
+      li:nth-child(1) {
+        width: 300px;
+        height: 60px;
+        text-align: center;
+        border: 2px solid #2fc4be;
+        border-radius: 15px;
+        padding: 15px;
+        position: absolute;
+        top: 160px;
+        left: 552px;
+        font-size: 16px;
+        font-family: "微软雅黑",Arial;
+        color: #2fc4be;
+      }
+      li:nth-child(2) {
+        width: 270px;
+        height: 84px;
+        text-align: left;
+        line-height: 1.5em;
+        border: 2px solid #2fc4be;
+        border-radius: 15px;
+        position: absolute;
+        top: 250px;
+        right: 552px;
+        padding: 15px;
+        font-size: 16px;
+        font-family: "微软雅黑",Arial;
+        color: #2fc4be;
+      }
+      li:nth-child(3) {
+        width: 387px;
+        height: 90px;
+        text-align: left;
+        line-height: 2em;
+        border: 2px solid #2fc4be;
+        border-radius: 15px;
+        position: absolute;
+        top: 325px;
+        left: 552px;
+        font-size: 16px;
+        font-family: "微软雅黑",Arial;
+        color: #2fc4be;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      li:nth-child(4) {
+        width: 356px;
+        height: 84px;
+        text-align: left;
+        border: 2px solid #2fc4be;
+        border-radius: 15px;
+        position: absolute;
+        top: 430px;
+        padding: 18px;
+        right: 552px;
+        font-size: 16px;
+        font-family: "微软雅黑",Arial;
+        color: #2fc4be;
+      }
+      li:nth-child(5) {
+        width: 260px;
+        height: 84px;
+        text-align: left;
+        line-height: 1.5em;
+        border: 2px solid #2fc4be;
+        border-radius: 15px;
+        position: absolute;
+        padding: 15px;
+        top: 530px;
+        left: 552px;
+        font-size: 16px;
+        font-family: "微软雅黑",Arial;
+        color: #2fc4be;
+      }
+      li:nth-child(6) {
+        width: 307px;
+        height: 84px;
+        text-align: left;
+        border: 2px solid #2fc4be;
+        border-radius: 15px;
+        position: absolute;
+        top: 620px;
+        padding: 18px;
+        right: 552px;
+        font-size: 16px;
+        font-family: "微软雅黑",Arial;
+        color: #2fc4be;
+      }
+      li:nth-child(7) {
+        width: 220px;
+        height: 80px;
+        text-align: left;
+        line-height: 2em;
+        padding: 18px;
+        border: 2px solid #2fc4be;
+        border-radius: 15px;
+        position: absolute;
+        top: 700px;
+        left: 552px;
+        font-size: 16px;
+        font-family: "微软雅黑",Arial;
+        color: #2fc4be;
+      }
+    }
+  }
+  #founder {
+    width: 100%;
+    height: auto;
+    background: #e5e5e5;
+    position: relative;
+    padding-top: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    .title {
+      width: 319px;
+      height: 95px;
+      margin: 0 auto;
+      background: url('../img/创始团队_23.png')no-repeat;
+      background-size: 100%;
+    }
+    #founder-center {
+      width: 1120px;
+      height: 580px;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      li {
+        flex-grow: 1;
+        text-align: center;
+        height: 550px;
+        border: 1px dashed #e5e5e5;
+        transition: all 0.5s ease;
+        p:nth-child(4){
+          text-align: left;
+        }
+      }
+      li:hover {
+        border: 1px dashed #59d4cf;
+        background: rgba(86, 202, 212, 0.3);
+        cursor: pointer;
+        color: #000;
+      }
+      li:nth-child(1) {
+        span {
+          width: 274px;
+          height: 322px;
+          margin: 0 auto;
+          background: url('../img/joy_37.png')no-repeat;
+          background-size: 100%;
+          display: block;
+        }
+        p:nth-child(2) {
+          font-family: "微软雅黑",Arial;
+          font-size: 18px;
+          margin-top: 15px;
+        }
+        p:nth-child(3) {
+          font-family: "微软雅黑",Arial;
+          font-size: 16px;
+        }
+        p:nth-child(4) {
+          width: 274px;
+          font-family: "微软雅黑",Arial;
+          font-size: 16px;
+          display: block;
+          line-height: 1.5em;
+          margin: 0 auto;
+        }
+      }
+      li:nth-child(2) {
+        span {
+          width: 274px;
+          height: 322px;
+          margin: 0 auto;
+          background: url('../img/刘_39.png')no-repeat;
+          background-size: 100%;
+          display: block;
+        }
+        p:nth-child(2) {
+          font-family: "微软雅黑",Arial;
+          font-size: 18px;
+          margin-top: 15px;
+        }
+        p:nth-child(3) {
+          font-family: "微软雅黑",Arial;
+          font-size: 16px;
+        }
+        p:nth-child(4) {
+          width: 274px;
+          font-family: "微软雅黑",Arial;
+          font-size: 16px;
+          display: block;
+          margin: 15px auto 0;
+          line-height: 1.5em;
+        }
+      }
+      li:nth-child(3) {
+        span {
+          width: 274px;
+          height: 322px;
+          margin: 0 auto;
+          background: url('../img/宏泽_41.png')no-repeat;
+          background-size: 100%;
+          display: block;
+        }
+        p:nth-child(2) {
+          font-family: "微软雅黑",Arial;
+          font-size: 18px;
+          margin-top: 15px;
+        }
+        p:nth-child(3) {
+          font-family: "微软雅黑",Arial;
+          font-size: 16px;
+        }
+        p:nth-child(4) {
+          width: 274px;
+          font-family: "微软雅黑",Arial;
+          font-size: 16px;
+          display: block;
+          line-height: 1.5em;
+          margin: 15px auto 0;
+        }
+      }
+    }
+  }
+  #contact {
+    height: 732px;
+    width: 100%;
+    padding-top: 55px;
+    overflow: hidden;
+    .title {
+      width: 319px;
+      height: 95px;
+      background: url('../img/联系我们_27.png')no-repeat;
+      background-size: 100%;
+      margin: 0 auto;
+    }
+    #contact-center {
+      width: 1100px;
+      height: 422px;
+      margin: 0 auto;
+      display: flex;
+      margin-top: 40px;
+      .lis {
+        flex-grow: 1;
+        .lis-k {
+          width: 337px;
+          height: 435px;
+          padding-top: 37px;
+          box-sizing: border-box;
+          text-align: center;
+          font-size: 16px;
+          font-family: "微软雅黑",Arial;
+          background: url('../img/地址电话邮箱框_31.png')no-repeat;
+          img {
+            display: block;
+            margin: 0 auto 25px;
+          }
+          span {
+            width: 100%;
+            height: auto;
+            margin-top: 39px;
+            display: block;
+          }
+        }
+      }
+      li:nth-child(1) {
+        .lis-k {
+          p {
+            width: 255px;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    height: 157px;
+    width: 100%;
+    background: #e5e5e5;
+    overflow: hidden;
+    #footer-center {
+      width: 630px;
+      height: 100%;
+      margin: 0 auto;
+      padding-top: 54px;
+      box-sizing: border-box;
+      .footer-first {
+        width: 100%;
+        height: auto;
+        display: flex;
+        p {
+          width: auto;
+          height: auto;
+          float: left;
+          flex-grow: 1;
+          a {
+            font-size: 14px;
+            color: #313332;
+            font-family: "微软雅黑",Arial;
+            text-decoration: none;
+            outline: none;
+            &:hover {
+              color: #58d7d0;
+              text-decoration: none;
+              outline: none;
+            }
+          }
+        }
+        &::after {
+          content: '';
+          height: 0;
+          clear: both;
+        }
+      }
+      .footer-second {
+        width: 100%;
+        height: auto;
+        display: flex;
+        p {
+          width: auto;
+          height: auto;
+          float: left;
+          flex-grow: 1;
+          font-size: 14px;
+          color: #313332;
+          font-family: "微软雅黑",Arial;
+        }
+        &::after {
+          content: '';
+          clear: both;
+          height: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1610px) {
+  /*当屏幕尺寸小于1610px时，应用下面的CSS样式*/
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    .hands img {
+      width: auto;
+      height: auto;
+      width: 730px;
+      height: 100%;
+    }
+    .logo {
+      width: 481px;
+      height: 153px;
+      position: absolute;
+      left: 750px;
+      top: 193px;
+      background: url('../img/logo_05.png')no-repeat;
+      background-size: 100%;
+    }
+    .download {
+      width: 237px;
+      height: 230px;
+      background: url('../img/扫描二维码下载_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 980px;
+      top: 426px;
+    }
+    .iphone {
+      width: 205px;
+      height: 76px;
+      background: url('../img/苹果_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 750px;
+      top: 452px;
+    }
+    .android {
+      width: 205px;
+      height: 76px;
+      background: url('../img/安卓_08.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 750px;
+      top: 574px;
+    }
+  }
+  #business {
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    #cons {
+      width: 285px;
+      height: 250px;
+      position: absolute;
+      right: 392px;
+      top: 187px;
+      .course{
+        font-size: 18px;
+        font-family: "微软雅黑",Arial;
+        text-align: center;
+      }
+      .course-k{
+        padding-left: 25px;
+        font-family: "微软雅黑",Arial;
+        text-align: left;
+      }
+      #bss-img1 {
+        width: 255px;
+        height: 154px;
+        display: block;
+        margin: 0 auto;
+        background: url('../img/线上_24.png')no-repeat;
+        background-size: 100%;
+        margin-bottom: 30px;
+      }
+      #bss-img2 {
+        width: 255px;
+        height: 154px;
+        display: block;
+        margin: 0 auto;
+        background: url('../img/线下_24.png')no-repeat;
+        background-size: 100%;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 16px;
+        font-family: "微软雅黑",Arial;
+        color: #fff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1550px) {
+  /*当屏幕尺寸小于1550px时，应用下面的CSS样式*/
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    .hands img {
+      width: auto;
+      height: auto;
+      width: 630px;
+      height: 100%;
+    }
+    .logo {
+      width: 481px;
+      height: 153px;
+      position: absolute;
+      left: 750px;
+      top: 113px;
+      background: url('../img/logo_05.png')no-repeat;
+      background-size: 100%;
+    }
+    .download {
+      width: 237px;
+      height: 230px;
+      background: url('../img/扫描二维码下载_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 980px;
+      top: 346px;
+    }
+    .iphone {
+      width: 205px;
+      height: 76px;
+      background: url('../img/苹果_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 750px;
+      top: 372px;
+    }
+    .android {
+      width: 205px;
+      height: 76px;
+      background: url('../img/安卓_08.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 750px;
+      top: 494px;
+    }
+  }
+  #business {
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    #cons {
+      width: 285px;
+      height: 250px;
+      position: absolute;
+      right: 392px;
+      top: 187px;
+      text-align: center;
+      #bss-img1 {
+        width: 255px;
+        height: 154px;
+        display: block;
+        margin: 0 auto;
+        background: url('../img/线上_24.png')no-repeat;
+        background-size: 100%;
+        margin-bottom: 30px;
+      }
+      #bss-img2 {
+        width: 255px;
+        height: 154px;
+        display: block;
+        margin: 0 auto;
+        background: url('../img/线下_24.png')no-repeat;
+        background-size: 100%;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 16px;
+        font-family: "微软雅黑",Arial;
+        color: #fff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1350px) {
+  /*当屏幕尺寸小于1350px时，应用下面的CSS样式*/
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    .hands img {
+      width: auto;
+      height: auto;
+      width: 560px;
+      height: 100%;
+    }
+    .logo {
+      width: 481px;
+      height: 153px;
+      position: absolute;
+      left: 650px;
+      top: 93px;
+      background: url('../img/logo_05.png')no-repeat;
+      background-size: 100%;
+    }
+    .download {
+      width: 237px;
+      height: 230px;
+      background: url('../img/扫描二维码下载_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 880px;
+      top: 326px;
+    }
+    .iphone {
+      width: 205px;
+      height: 76px;
+      background: url('../img/苹果_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 650px;
+      top: 352px;
+    }
+    .android {
+      width: 205px;
+      height: 76px;
+      background: url('../img/安卓_08.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 650px;
+      top: 474px;
+    }
+  }
+  #business {
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    #cons {
+      width: 285px;
+      height: 250px;
+      position: absolute;
+      right: 292px;
+      top: 137px;
+      text-align: center;
+      #bss-img1 {
+        width: 255px;
+        height: 154px;
+        display: block;
+        margin: 0 auto;
+        background: url('../img/线上_24.png')no-repeat;
+        background-size: 100%;
+        margin-bottom: 30px;
+      }
+      #bss-img2 {
+        width: 255px;
+        height: 154px;
+        display: block;
+        margin: 0 auto;
+        background: url('../img/线下_24.png')no-repeat;
+        background-size: 100%;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 16px;
+        font-family: "微软雅黑",Arial;
+        color: #fff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  /*当屏幕尺寸小于1300px时，应用下面的CSS样式*/
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    .logo {
+      width: 481px;
+      height: 153px;
+      position: absolute;
+      left: 650px;
+      top: 43px;
+      background: url('../img/logo_05.png')no-repeat;
+      background-size: 100%;
+    }
+    .download {
+      width: 237px;
+      height: 230px;
+      background: url('../img/扫描二维码下载_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 880px;
+      top: 276px;
+    }
+    .iphone {
+      width: 205px;
+      height: 76px;
+      background: url('../img/苹果_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 650px;
+      top: 302px;
+    }
+    .android {
+      width: 205px;
+      height: 76px;
+      background: url('../img/安卓_08.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 650px;
+      top: 424px;
+    }
+  }
+}
+@media screen and (max-width: 1180px) {
+  /*当屏幕尺寸小于1180px时，应用下面的CSS样式*/
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    .logo {
+      width: 481px;
+      height: 153px;
+      position: absolute;
+      left: 550px;
+      top: 23px;
+      background: url('../img/logo_05.png')no-repeat;
+      background-size: 100%;
+    }
+    .download {
+      width: 237px;
+      height: 230px;
+      background: url('../img/扫描二维码下载_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 780px;
+      top: 256px;
+    }
+    .iphone {
+      width: 205px;
+      height: 76px;
+      background: url('../img/苹果_05.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 550px;
+      top: 262px;
+    }
+    .android {
+      width: 205px;
+      height: 76px;
+      background: url('../img/安卓_08.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 550px;
+      top: 384px;
+    }
+  }
+}
+@media screen and (max-width: 1129px) {
+  /*当屏幕尺寸小于1130px时，应用下面的CSS样式*/
+  .left-nav {
+    width: 40%;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    margin: auto;
+    background: rgba(47,196,190,0.8);
+    z-index: 100;
+    transition: all 0.8s cubic-bezier(0.24, 0.62, 0.26, 0.91);
+    transform: translateX(-100%);
+    li{
+      height: 80px;
+      line-height: 80px;
+      padding-left: 50px;
+      color:#fff;
+
+      cursor: pointer;
+      border-bottom: 1px dashed #666;
+      font-size: 18px;
+      font-family: "微软雅黑",Arial;
+      -moz-user-select: none;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+    }
+  }
+  .left-nav.active {
+    transform: translateX(0);
+  }
+  .container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #header {
+    height: 60px;
+    width: 100%;
+    background: #fff !important;
+    position: fixed;
+    z-index: 200;
+    box-shadow: 0 4px 2px -2px rgba(0,0px,50px,0.1);
+    overflow: hidden;
+    #top-center {
+      width: auto;
+      height: 60px;
+      position: relative;
+      .main-logo {
+        width: 43px;
+        height: 39px;
+        background: url('../img/iphone/打开菜单_09.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 50px;
+        margin: auto;
+        cursor: pointer;
+      }
+      .main-nav {
+        display: none;
+      }
+      .vip-chong {
+        width: 93px;
+        height: 39px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 50px;
+        margin: auto;
+        background: url('../img/iphone/购买_03.png')no-repeat 0 -1px;
+        background-size: 100%;
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+
+        }
+      }
+    }
+  }
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 60px;
+
+    .picture {
+      display: none;
+    }
+    .hands {
+      display: none;
+    }
+    .hides {
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      width: 510px;
+      height: 149px;
+      background: url('../img/iphone/logo_03.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 150px;
+      margin: auto;
+    }
+    .logo-center {
+      width: 510px;
+      height: 222px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 325px;
+      margin: auto;
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .download {
+        width: 240px;
+        height: 227px;
+        background: url('../img/iphone/二维码_07.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 205px;
+        top: 0;
+      }
+      .android {
+        width: 209px;
+        height: 90px;
+        background: url('../img/iphone/安卓_10.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 0;
+        top: 20px;
+      }
+      .iphone {
+        width: 209px;
+        height: 90px;
+        background: url('../img/iphone/苹果_07.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 0;
+        top: 130px;
+      }
+    }
+  }
+  #about {
+    width: 100%;
+    height: auto;
+    background: #e5e5e5;
+    #about-lezhi {
+      width: 80%;
+      height: 450px;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 43px;
+      box-sizing: border-box;
+      #about-title {
+        width: 50%;
+        height: 132px;
+        margin: 0 auto;
+        background: url('../img/iphone/关于乐只_07.png')no-repeat;
+        background-size: 100%;
+      }
+      li {
+        width: 90%;
+        margin: 30px auto;
+        line-height: 2em;
+        font-size: 20px;
+        font-family: "微软雅黑",Arial;
+        text-indent: 2em;
+      }
+    }
+  }
+  #rby {
+    height: 1330px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding-top: 54px;
+    box-sizing: border-box;
+    #rby-con {
+      height: 1230px;
+      width: 285px;
+      margin: 0 auto;
+      li {
+        margin-bottom: 50px;
+      }
+      .rby-one {
+        width: 100%;
+        height: 378px;
+        display: block;
+        span {
+          width: 175px;
+          height: 230px;
+          display: block;
+          margin: 0 auto;
+          background: url('../img/iphone/价值观_07.png')no-repeat;
+          background-size: 100%;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 20px;
+          font-family: "微软雅黑",Arial;
+          text-align: center;
+        }
+      }
+      .rby-two {
+        width: 100%;
+        height: 378px;
+        display: block;
+        span {
+          width: 175px;
+          height: 230px;
+          display: block;
+          margin: 0 auto;
+          background: url('../img/iphone/使命_10.png')no-repeat;
+          margin-bottom: 10px;
+          background-size: 100%;
+        }
+        p {
+          font-size: 20px;
+          font-family: "微软雅黑",Arial;
+          text-align: center;
+        }
+      }
+      .rby-three {
+        width: 100%;
+        height: 378px;
+        display: block;
+        span {
+          width: 175px;
+          height: 230px;
+          display: block;
+          margin: 0 auto;
+          background: url('../img/iphone/愿景_13.png')no-repeat;
+          margin-bottom: 10px;
+          background-size: 100%;
+        }
+        p {
+          font-size: 20px;
+          font-family: "微软雅黑",Arial;
+          text-align: center;
+        }
+      }
+    }
+  }
+  #business {
+    position: relative;
+    #cons {
+      position: absolute;
+      right: 180px;
+      bottom: 80px;
+      text-align: center;
+      #bss-img1 {
+        width: 140px;
+        height: 85px;
+        background: url('../img/iphone/线上字_07.png')no-repeat;
+        background-size: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+      #bss-img2 {
+        width: 140px;
+        height: 85px;
+        background: url('../img/iphone/线下字_07.png')no-repeat;
+        background-size: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+      p {
+        font-family: "微软雅黑",Arial;
+        font-size: 16px;
+      }
+    }
+  }
+  #history {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-top: 40px;
+    box-sizing: border-box;
+    #history-center {
+      width: 90%;
+      height: 1270px;
+      margin: 0 auto;
+      background: url('../img/iphone/发展历程_07.png')no-repeat;
+      background-size: 100%;
+      li {
+        display: none;
+      }
+    }
+  }
+  #founder {
+    position: relative;
+    background: #e5e5e5;
+    padding-top: 35px;
+    padding-bottom: 3px;
+    box-sizing: border-box;
+    .title {
+      width: 395px;
+      height: 140px;
+      margin: 0 auto;
+      background: url('../img/iphone/创始团队_07.png')no-repeat;
+      background-size: 100%;
+    }
+    #founder-center {
+      width: 60%;
+      margin: 0 auto;
+      text-align: center;
+      li {
+        height: auto;
+        font-family: "微软雅黑",Arial;
+        font-size: 18px;
+        margin-bottom: 100px;
+
+        span {
+          width: 50%;
+          height: 540px;
+          display: block;
+          margin: 0 auto;
+        }
+        .joy {
+          background: url('../img/iphone/joy_10.png')no-repeat;
+          background-size: 100%;
+        }
+        .liu {
+          background: url('../img/iphone/刘卫_13.png')no-repeat;
+          background-size: 100%;
+        }
+        .wu {
+          background: url('../img/iphone/宏泽_15.png')no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+  #contact {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    .title {
+      width: 340px;
+      height: 111px;
+      margin: 0 auto;
+      background: url('../img/iphone/联系我们字_07.png')no-repeat;
+      background-size: 100%;
+      margin-bottom: 20px;
+    }
+    #contact-center {
+      width: 80%;
+      height: 1265px;
+      display: block;
+      margin: 0 auto;
+      padding: 30px;
+      background: url('../img/iphone/联系方式框_07.png')no-repeat;
+      background-size: 100%;
+      text-align: center;
+      font-family: "微软雅黑",Arial;
+      font-size: 18px;
+      li {
+        width: 40%;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 50px;
+        img {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  #footer {
+    height: 100px;
+    width: 100%;
+    background: #e5e5e5;
+    #footer-center {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      padding-top: 30px;
+      box-sizing: border-box;
+      .footer-first {
+        width: 100%;
+        height: auto;
+        display: flex;
+        p {
+          width: auto;
+          height: auto;
+          float: left;
+          flex-grow: 1;
+          a {
+            font-size: 14px;
+            color: #313332;
+            font-family: "微软雅黑",Arial;
+            text-decoration: none;
+            outline: none;
+            &:hover {
+              color: #58d7d0;
+              text-decoration: none;
+              outline: none;
+            }
+          }
+        }
+        &::after {
+          content: '';
+          height: 0;
+          clear: both;
+        }
+      }
+      .footer-second {
+        width: 100%;
+        height: auto;
+        display: flex;
+        p {
+          width: auto;
+          height: auto;
+          float: left;
+          flex-grow: 1;
+          font-size: 14px;
+          color: #313332;
+          font-family: "微软雅黑",Arial;
+        }
+        &::after {
+          content: '';
+          clear: both;
+          height: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 950px) {
+  /*当屏幕尺寸小于950px时，应用下面的CSS样式*/
+  .left-nav {
+    width: 40%;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    margin: auto;
+    background: rgba(47,196,190,0.8);
+    z-index: 100;
+    transition: all 0.8s cubic-bezier(0.24, 0.62, 0.26, 0.91);
+    transform: translateX(-100%);
+    li{
+      height: 80px;
+      line-height: 80px;
+      padding-left: 25px;
+      cursor: pointer;
+      color:#fff;
+      border-bottom: 1px dashed #666;
+      font-size: 18px;
+      font-family: "微软雅黑",Arial;
+      -moz-user-select: none;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+    }
+  }
+  .left-nav.active {
+    transform: translateX(0);
+  }
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+
+    .picture {
+      display: none;
+    }
+    .hands {
+      display: none;
+    }
+    .hides {
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      width: 510px;
+      height: 149px;
+      background: url('../img/iphone/logo_03.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50px;
+      margin: auto;
+    }
+    .logo-center {
+      width: 510px;
+      height: 222px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 225px;
+      margin: auto;
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .download {
+        width: 240px;
+        height: 227px;
+        background: url('../img/iphone/二维码_07.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 205px;
+        top: 0;
+      }
+      .android {
+        width: 209px;
+        height: 90px;
+        background: url('../img/iphone/安卓_10.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 0;
+        top: 10px;
+      }
+      .iphone {
+        width: 209px;
+        height: 90px;
+        background: url('../img/iphone/苹果_07.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 0;
+        top: 135px;
+      }
+    }
+  }
+  #history {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-top: 40px;
+    box-sizing: border-box;
+    #history-center {
+      width: 90%;
+      height: 1000px;
+      margin: 0 auto;
+      background: url('../img/iphone/发展历程_07.png')no-repeat;
+      background-size: 100%;
+      li {
+        display: none;
+      }
+    }
+  }
+  #founder {
+    background: #e5e5e5;
+    padding-top: 35px;
+    position: relative;
+    .title {
+      width: 395px;
+      height: 140px;
+      margin: 0 auto;
+      background: url('../img/iphone/创始团队_07.png')no-repeat;
+      background-size: 100%;
+    }
+    #founder-center {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      li {
+        height: auto;
+        font-family: "微软雅黑",Arial;
+        font-size: 18px;
+        margin-bottom: 100px;
+        span {
+          width: 50%;
+          height: 440px;
+          display: block;
+          margin: 0 auto;
+        }
+        .joy {
+          background: url('../img/iphone/joy_10.png')no-repeat;
+          background-size: 100%;
+        }
+        .liu {
+          background: url('../img/iphone/刘卫_13.png')no-repeat;
+          background-size: 100%;
+        }
+        .wu {
+          background: url('../img/iphone/宏泽_15.png')no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+  #contact {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    .title {
+      width: 340px;
+      height: 111px;
+      margin: 0 auto;
+      background: url('../img/iphone/联系我们字_07.png')no-repeat;
+      background-size: 100%;
+      margin-bottom: 20px;
+    }
+    #contact-center {
+      width: 80%;
+      height: 1265px;
+      display: block;
+      margin: 0 auto;
+      padding: 30px;
+      background: url('../img/iphone/联系方式框_07.png')no-repeat;
+      background-size: 100%;
+      text-align: center;
+      font-family: "微软雅黑",Arial;
+      font-size: 18px;
+      li {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 10px;
+        img {
+          margin-bottom: 5px;
+        }
+        .lis-m {
+          width: 100%;
+        }
+        p {
+          line-height: 1.2em;
+        }
+      }
+      li:nth-child(1) {
+        height: auto;
+      }
+      li:nth-child(2) {
+        height: auto;
+      }
+      li:nth-child(3) {
+        height: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 860px) {
+  /*当屏幕尺寸小于860px时，应用下面的CSS样式*/
+  #contact {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    .title {
+      width: 340px;
+      height: 111px;
+      margin: 0 auto;
+      background: url('../img/iphone/联系我们字_07.png')no-repeat;
+      background-size: 100%;
+      margin-bottom: 20px;
+    }
+    #contact-center {
+      width: 80%;
+      height: 1000px;
+      display: block;
+      margin: 0 auto;
+      padding: 30px;
+      background: url('../img/iphone/联系方式框_07.png')no-repeat;
+      background-size: 100%;
+      text-align: center;
+      font-family: "微软雅黑",Arial;
+      font-size: 18px;
+      li {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 10px;
+        img {
+          margin-bottom: 5px;
+        }
+        .lis-m {
+          width: 100%;
+        }
+        p {
+          line-height: 1.2em;
+        }
+      }
+      li:nth-child(1) {
+        height: auto;
+      }
+      li:nth-child(2) {
+        height: auto;
+      }
+      li:nth-child(3) {
+        height: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  /*当屏幕尺寸小于750px时，应用下面的CSS样式*/
+  .left-nav {
+    width: 40%;
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    margin: auto;
+    background: rgba(47,196,190,0.8);
+    z-index: 100;
+    transition: all 0.8s cubic-bezier(0.24, 0.62, 0.26, 0.91);
+    transform: translateX(-100%);
+    li{
+      height: 60px;
+      line-height: 60px;
+      padding-left: 25px;
+      cursor: pointer;
+      border-bottom: 1px dashed #666;
+      font-size: 18px;
+      font-family: "微软雅黑",Arial;
+      color:#fff;
+
+      -moz-user-select: none;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+    }
+  }
+  .left-nav.active {
+    transform: translateX(0);
+  }
+  .container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #header {
+    height: 50px;
+    width: 100%;
+    background: #fff !important;
+    position: fixed;
+    z-index: 200;
+    box-shadow: 0 4px 2px -2px rgba(0,0px,50px,0.1);
+    overflow: hidden;
+    #top-center {
+      width: auto;
+      height: 50px;
+      position: relative;
+      .main-logo {
+        width: 44px;
+        height: 37px;
+        background: url('../img/iphone/打开菜单_09.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 23px;
+        margin: auto;
+        cursor: pointer;
+      }
+      .main-nav {
+        display: none;
+      }
+      .vip-chong {
+        width: 85px;
+        height: 38px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 23px;
+        margin: auto;
+        background: url('../img/iphone/购买_03.png')no-repeat 0 -1px;
+        background-size: 100%;
+      }
+    }
+  }
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
+
+    .picture {
+      display: none;
+    }
+    .hands {
+      display: none;
+    }
+    .hides {
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      width: 400px;
+      height: 120px;
+      background: url('../img/iphone/logo_04.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100px;
+      margin: auto;
+    }
+    .logo-center {
+      width: 400px;
+      height: 165px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 250px;
+      margin: auto;
+      .download {
+        width: 157px;
+        height: 155px;
+        background: url('../img/iphone/二维码_03.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 195px;
+        top: 0;
+      }
+      .android {
+        width: 150px;
+        height: 55px;
+        background: url('../img/iphone/安卓_11.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 25px;
+        top: 15px;
+      }
+      .iphone {
+        width: 150px;
+        height: 55px;
+        background: url('../img/iphone/苹果_06.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 25px;
+        top: 90px;
+      }
+    }
+  }
+  #about {
+    width: 100%;
+    height: auto;
+    background: #e5e5e5;
+    #about-lezhi {
+      width: 80%;
+      height: 350px;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 43px;
+      box-sizing: border-box;
+      #about-title {
+        width: 60%;
+        height: 102px;
+        margin: 0 auto;
+        background: url('../img/iphone/关于乐只_07.png')no-repeat;
+        background-size: 100%;
+      }
+      li {
+        width: 90%;
+        margin: 0 auto;
+        line-height: 2em;
+        font-size: 18px;
+        font-family: "微软雅黑",Arial;
+        text-indent: 2em;
+      }
+    }
+  }
+  #rby {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding-top: 54px;
+    box-sizing: border-box;
+    #rby-con {
+      height: 1230px;
+      width: 285px;
+      margin: 0 auto;
+    }
+  }
+  #business {
+    img {
+      width: 100%;
+      height: 335px;
+    }
+    #cons {
+      height: 150px;
+      position: absolute;
+      right: 60px;
+      top: 75px;
+      text-align: center;
+      #bss-img1 {
+        width: 140px;
+        height: 85px;
+        background: url('../img/iphone/线上字_07.png')no-repeat;
+        background-size: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+      #bss-img2 {
+        width: 140px;
+        height: 85px;
+        background: url('../img/iphone/线下字_07.png')no-repeat;
+        background-size: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+      p {
+        font-family: "微软雅黑",Arial;
+        font-size: 16px;
+      }
+    }
+  }
+  #history {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-top: 40px;
+    box-sizing: border-box;
+    #history-center {
+      width: 90%;
+      height: 845px;
+      margin: 0 auto;
+      background: url('../img/iphone/发展历程_07.png')no-repeat;
+      background-size: 100%;
+      li {
+        display: none;
+      }
+    }
+  }
+  #founder {
+    background: #e5e5e5;
+    padding-top: 35px;
+    position: relative;
+    .title {
+      width: 295px;
+      height: 95px;
+      margin: 0 auto;
+      background: url('../img/iphone/创始团队_07.png')no-repeat;
+      background-size: 100%;
+    }
+    #founder-center {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      li {
+        height: auto;
+        font-family: "微软雅黑",Arial;
+        font-size: 18px;
+        margin-bottom: 50px;
+        span {
+          width: 50%;
+          height: 365px;
+          display: block;
+          margin: 0 auto;
+        }
+        .joy {
+          background: url('../img/iphone/joy_10.png')no-repeat;
+          background-size: 100%;
+        }
+        .liu {
+          background: url('../img/iphone/刘卫_13.png')no-repeat;
+          background-size: 100%;
+        }
+        .wu {
+          background: url('../img/iphone/宏泽_15.png')no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+  #contact {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    .title {
+      width: 240px;
+      height: 68px;
+      margin: 0 auto;
+      background: url('../img/iphone/联系我们字_07.png')no-repeat;
+      background-size: 100%;
+      margin-bottom: 20px;
+    }
+    #contact-center {
+      width: 80%;
+      height: 840px;
+      display: block;
+      margin: 0 auto;
+      padding: 30px;
+      background: url('../img/iphone/22_07.png')no-repeat;
+      background-size: 100%;
+      text-align: center;
+      font-family: "微软雅黑",Arial;
+      font-size: 18px;
+      .lis {
+        display: none;
+      }
+    }
+  }
+
+  #footer {
+    height: 100px;
+    width: 100%;
+    background: #e5e5e5;
+    #footer-center {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+      padding-top: 45px;
+      box-sizing: border-box;
+
+      .footer-first {
+        display: none;
+        // width: 100%;
+        // height: auto;
+        // display: flex;
+        p {
+          width: auto;
+          height: auto;
+          float: left;
+
+          flex-grow: 1;
+          a {
+            font-size: 14px;
+            color: #313332;
+            font-family: "微软雅黑",Arial;
+            text-decoration: none;
+            outline: none;
+            &:hover {
+              color: #58d7d0;
+              text-decoration: none;
+              outline: none;
+            }
+          }
+        }
+        &::after {
+          content: '';
+          height: 0;
+          clear: both;
+        }
+      }
+      .footer-second {
+        width: 100%;
+        height: auto;
+        display: flex;
+        p {
+          width: auto;
+          height: auto;
+          float: left;
+          flex-grow: 1;
+          font-size: 14px;
+          color: #313332;
+          font-family: "微软雅黑",Arial;
+        }
+        &::after {
+          content: '';
+          clear: both;
+          height: 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:670px) {
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
+
+    .picture {
+      display: none;
+    }
+    .hands {
+      display: none;
+    }
+    .hides {
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      width: 350px;
+      height: 120px;
+      background: url('../img/iphone/logo_04.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 65px;
+      margin: auto;
+    }
+    .logo-center {
+      width: 400px;
+      height: 165px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 215px;
+      margin: auto;
+      .download {
+        display: none;
+      }
+      .android {
+        width: 150px;
+        height: 55px;
+        background: url('../img/iphone/安卓_11.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 35px;
+        top: 0;
+      }
+      .iphone {
+        width: 150px;
+        height: 55px;
+        background: url('../img/iphone/苹果_06.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 215px;
+        top: 0;
+      }
+    }
+  }
+  #founder-center {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    li {
+      height: auto;
+      font-family: "微软雅黑",Arial;
+      font-size: 18px;
+      margin-bottom: 50px;
+      p:nth-child(4){
+        text-align: left;
+      }
+      span {
+        width: 50%;
+        height: 365px;
+        display: block;
+        margin: 0 auto;
+      }
+      .joy {
+        background: url('../img/iphone/joy_10.png')no-repeat;
+        background-size: 100%;
+      }
+      .liu {
+        background: url('../img/iphone/刘卫_13.png')no-repeat;
+        background-size: 100%;
+      }
+      .wu {
+        background: url('../img/iphone/宏泽_15.png')no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:530px) {
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
+
+    .picture {
+      display: none;
+    }
+    .hands {
+      display: none;
+    }
+    .hides {
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      width: 320px;
+      height: 95px;
+      background: url('../img/iphone/logo_04.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50px;
+      margin: auto;
+    }
+    .logo-center {
+      width: 320px;
+      height: 150px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 180px;
+      margin: auto;
+      .download {
+        display: none;
+        // width: 157px;
+        // height: 155px;
+        // background: url('../img/iphone/二维码_03.png')no-repeat;
+        // background-size: 100%;
+        // position: absolute;
+        // left: 195px;
+        // top: 0;
+      }
+      .android {
+        width: 150px;
+        height: 55px;
+        background: url('../img/iphone/安卓_11.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 5px;
+        top: 0;
+      }
+      .iphone {
+        width: 150px;
+        height: 55px;
+        background: url('../img/iphone/苹果_06.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 165px;
+        top: 0;
+      }
+    }
+  }
+  #contact {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    .title {
+      width: 240px;
+      height: 68px;
+      margin: 0 auto;
+      background: url('../img/iphone/联系我们字_07.png')no-repeat;
+      background-size: 100%;
+      margin-bottom: 20px;
+    }
+    #contact-center {
+      width: 80%;
+      height: 605px;
+      display: block;
+      margin: 0 auto;
+      padding: 30px;
+      background: url('../img/iphone/22_07.png')no-repeat;
+      background-size: 100%;
+      text-align: center;
+      font-family: "微软雅黑",Arial;
+      font-size: 18px;
+      .lis {
+        display: none;
+      }
+    }
+  }
+  #founder-center {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    li {
+      height: auto;
+      font-family: "微软雅黑",Arial;
+      font-size: 18px;
+      margin-bottom: 50px;
+      p:nth-child(4){
+        text-align: left;
+      }
+      span {
+        width: 50%;
+        height: 365px;
+        display: block;
+        margin: 0 auto;
+      }
+      .joy {
+        background: url('../img/iphone/joy_10.png')no-repeat;
+        background-size: 100%;
+      }
+      .liu {
+        background: url('../img/iphone/刘卫_13.png')no-repeat;
+        background-size: 100%;
+      }
+      .wu {
+        background: url('../img/iphone/宏泽_15.png')no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 455px) {
+  /*当屏幕尺寸小于385px时，应用下面的CSS样式*/
+  .left-nav {
+    width: 50%;
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    margin: auto;
+    background: rgba(47,196,190,0.8);
+    z-index: 100;
+    transition: all 0.8s cubic-bezier(0.24, 0.62, 0.26, 0.91);
+    transform: translateX(-100%);
+    li{
+      height: 60px;
+      line-height: 60px;
+      padding-left: 25px;
+      cursor: pointer;
+      border-bottom: 1px dashed #666;
+      font-size: 18px;
+      font-family: "微软雅黑",Arial;
+      color:#fff;
+
+      -moz-user-select: none;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+    }
+  }
+  .left-nav.active {
+    transform: translateX(0);
+  }
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+
+    .picture {
+      display: none;
+    }
+    .hands {
+      display: none;
+    }
+    .hides {
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      width: 290px;
+      height: 90px;
+      background: url('../img/iphone/logo_04.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 55px;
+      margin: auto;
+    }
+    .logo-center {
+      width: 290px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 145px;
+      margin: auto;
+
+      .android {
+        width: 130px;
+        height: 50px;
+        background: url('../img/iphone/安卓_11.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 10px;
+        top: 20px;
+      }
+      .iphone {
+        width: 130px;
+        height: 50px;
+        background: url('../img/iphone/苹果_06.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 150px;
+        top: 20px;
+      }
+    }
+  }
+  #about {
+    width: 100%;
+    height: auto;
+    background: #e5e5e5;
+    #about-lezhi {
+      width: 80%;
+      height: 350px;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 43px;
+      box-sizing: border-box;
+      #about-title {
+        width: 60%;
+        height: 62px;
+        margin: 0 auto;
+        background: url('../img/iphone/关于乐只_07.png')no-repeat;
+        background-size: 100%;
+      }
+      li {
+        width: 90%;
+        margin: 0 auto;
+        line-height: 2em;
+        font-size: 18px;
+        font-family: "微软雅黑",Arial;
+        text-indent: 2em;
+      }
+    }
+  }
+  #business {
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    #cons {
+      width: 210px;
+      position: absolute;
+      left: 150px;
+      top: 40px;
+      text-align: center;
+      .course{
+        font-size: 20px;
+       }
+      #bss-img1 {
+        display: none;
+        // width: 120px;
+        // height: 65px;
+        // background: url('../img/iphone/线上字_07.png')no-repeat;
+        // background-size: 100%;
+        // display: block;
+        // margin-bottom: 5px;
+      }
+      #bss-img2 {
+        display: none;
+
+        // width: 120px;
+        // height: 65px;
+        // background: url('../img/iphone/线下字_07.png')no-repeat;
+        // background-size: 100%;
+        // display: block;
+        // margin-bottom: 10px;
+      }
+      p {
+        font-family: "微软雅黑",Arial;
+        font-size: 16px;
+      }
+    }
+  }
+  #history {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-top: 40px;
+    box-sizing: border-box;
+    #history-center {
+      width: 90%;
+      height: 540px;
+      margin: 0 auto;
+      background: url('../img/iphone/发展历程_07.png')no-repeat;
+      background-size: 100%;
+      li {
+        display: none;
+      }
+    }
+  }
+  #founder {
+    background: #e5e5e5;
+    padding-top: 35px;
+    position: relative;
+    .title {
+      width: 200px;
+      height: 80px;
+      margin: 0 auto;
+      background: url('../img/iphone/创始团队_07.png')no-repeat;
+      background-size: 100%;
+    }
+    #founder-center {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      li {
+        height: auto;
+        font-family: "微软雅黑",Arial;
+        font-size: 16px;
+        margin-bottom: 50px;
+        span {
+          width: 50%;
+          height: 180px;
+          display: block;
+          margin: 0 auto;
+        }
+        .joy {
+          background: url('../img/iphone/joy_10.png')no-repeat;
+          background-size: 100%;
+        }
+        .liu {
+          background: url('../img/iphone/刘卫_13.png')no-repeat;
+          background-size: 100%;
+        }
+        .wu {
+          background: url('../img/iphone/宏泽_15.png')no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+  #contact {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    .title {
+      width: 200px;
+      height: 58px;
+      margin: 0 auto;
+      background: url('../img/iphone/联系我们字_07.png')no-repeat;
+      background-size: 100%;
+      margin-bottom: 20px;
+    }
+    #contact-center {
+      width: 80%;
+      height: 500px;
+      display: block;
+      margin: 0 auto;
+      padding: 30px;
+      background: url('../img/iphone/22_07.png')no-repeat;
+      background-size: 100%;
+      text-align: center;
+      font-family: "微软雅黑",Arial;
+      font-size: 18px;
+      .lis {
+        display: none;
+      }
+    }
+  }
+  #footer {
+    height: 100px;
+    width: 100%;
+    background: #e5e5e5;
+    #footer-center {
+      width: 85%;
+      height: 100%;
+      margin: 0 auto;
+      padding-top: 30px;
+      box-sizing: border-box;
+      .footer-first {
+        display: none;
+        p {
+          width: auto;
+          height: auto;
+          float: left;
+          flex-grow: 1;
+          margin: 0;
+          a {
+            font-size: 14px;
+            color: #313332;
+            font-family: "微软雅黑",Arial;
+            text-decoration: none;
+            outline: none;
+            &:hover {
+              color: #58d7d0;
+              text-decoration: none;
+              outline: none;
+            }
+          }
+        }
+        &::after {
+          content: '';
+          height: 0;
+          clear: both;
+        }
+      }
+      .footer-second {
+        width: 100%;
+        height: auto;
+        display: flex;
+        p {
+          width: auto;
+          height: auto;
+          float: left;
+          flex-grow: 1;
+          font-size: 14px;
+          color: #313332;
+          font-family: "微软雅黑",Arial;
+        }
+        &::after {
+          content: '';
+          clear: both;
+          height: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  /*当屏幕尺寸小于350px时，应用下面的CSS样式*/
+  .left-nav {
+    width: 40%;
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    margin: auto;
+    background: rgba(47,196,190,0.8);
+    z-index: 100;
+    transition: all 0.8s cubic-bezier(0.24, 0.62, 0.26, 0.91);
+    transform: translateX(-100%);
+    li{
+      height: 60px;
+      line-height: 60px;
+      color:#fff;
+
+      padding-left: 25px;
+      cursor: pointer;
+      border-bottom: 1px dashed #666;
+      font-size: 18px;
+      font-family: "微软雅黑",Arial;
+      -moz-user-select: none;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+    }
+  }
+  .left-nav.active {
+    transform: translateX(0);
+  }
+  #banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+
+    .picture {
+      display: none;
+    }
+    .hands {
+      display: none;
+    }
+    .hides {
+      width: 100%;
+      height: 100%;
+    }
+    .logo {
+      width: 230px;
+      height: 85px;
+      background: url('../img/iphone/logo_04.png')no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 40px;
+      margin: auto;
+    }
+    .logo-center {
+      width: 230px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 95px;
+      margin: auto;
+      .download {
+        display: none;
+      }
+      .android {
+        width: 100px;
+        height: 43px;
+        background: url('../img/iphone/安卓_11.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 10px;
+        top: 30px;
+      }
+      .iphone {
+        width: 100px;
+        height: 43px;
+        background: url('../img/iphone/苹果_06.png')no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 125px;
+        top: 30px;
+      }
+    }
+  }
+  #business {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    #cons {
+      width: 230px;
+      position: absolute;
+      left: 70px;
+      top: 20px;
+      text-align: center;
+      #bss-img1 {
+        display: none;
+
+        // width: 110px;
+        // height: 50px;
+        // background: url('../img/iphone/线上字_07.png')no-repeat;
+        // background-size: 100%;
+        // display: block;
+        // margin-bottom: 5px;
+      }
+      #bss-img2 {
+        display: none;
+
+        // width: 110px;
+        // height: 50px  ;
+        // background: url('../img/iphone/线下字_07.png')no-repeat;
+        // background-size: 100%;
+        // display: block;
+        // margin-bottom: 10px;
+      }
+      p {
+        font-family: "微软雅黑",Arial;
+        font-size: 14px;
+      }
+    }
+  }
+  #history {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding-top: 40px;
+    box-sizing: border-box;
+    #history-center {
+      width: 90%;
+      height: 400px;
+      margin: 0 auto;
+      background: url('../img/iphone/发展历程_07.png')no-repeat;
+      background-size: 100%;
+      li {
+        display: none;
+      }
+    }
+  }
+  #contact {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    .title {
+      width: 200px;
+      height: 58px;
+      margin: 0 auto;
+      background: url('../img/iphone/联系我们字_07.png')no-repeat;
+      background-size: 100%;
+      margin-bottom: 20px;
+    }
+    #contact-center {
+      width: 80%;
+      height: 380px;
+      display: block;
+      margin: 0 auto;
+      padding: 30px;
+      background: url('../img/iphone/22_07.png')no-repeat;
+      background-size: 100%;
+      text-align: center;
+      font-family: "微软雅黑",Arial;
+      font-size: 18px;
+      .lis {
+        display: none;
+      }
+    }
+  }
+  #footer {
+    height: 100px;
+    width: 100%;
+    background: #e5e5e5;
+    #footer-center {
+      width: 85%;
+      height: 100%;
+      margin: 0 auto;
+      padding-top: 35px;
+      box-sizing: border-box;
+      .footer-first {
+        display: none;
+        p {
+          width: auto;
+          height: auto;
+          float: left;
+          flex-grow: 1;
+          margin: 0;
+          a {
+            font-size: 14px;
+            color: #313332;
+            font-family: "微软雅黑",Arial;
+            text-decoration: none;
+            outline: none;
+            &:hover {
+              color: #58d7d0;
+              text-decoration: none;
+              outline: none;
+            }
+          }
+        }
+        &::after {
+          content: '';
+          height: 0;
+          clear: both;
+        }
+      }
+      .footer-second {
+        width: 100%;
+        height: auto;
+        display: flex;
+        p {
+          width: auto;
+          height: auto;
+          float: left;
+          flex-grow: 1;
+          font-size: 14px;
+          color: #313332;
+          font-family: "微软雅黑",Arial;
+        }
+        &::after {
+          content: '';
+          clear: both;
+          height: 0;
+        }
+      }
+    }
+  }
+}
